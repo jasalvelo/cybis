@@ -153,6 +153,15 @@ void setup(){
 }
 
 void loop (){
-  // we should make our respective methods and call them here
-  //hello
+ //electromagnet code should come first
+ else if (count >= 6 && count <=20){ 
+  Serial.println("LED ON");
+  digitalWrite (LED, HIGH);  
+  delay (180000); //workflow estimates 3 minutes LED ON
+  //sensor code goes here 
+  digitalWrite (LED, LOW);  
+  Serial.println("LED OF");
+  Serial.println("measurement end");
+ }
+  
 }
